@@ -1,0 +1,62 @@
+.header-cart-block-om {
+    color            : $color_2;
+    position         : relative;
+    margin-inline-end: 13px;
+
+    .figure-om {
+        .svg-om {}
+    }
+
+    .number-om {
+        min-width       : 20px;
+        height          : 20px;
+        border-radius   : 50%;
+        background-color: #ff526c;
+        position        : absolute;
+        top             : 0;
+        left            : 0;
+        padding         : 2px;
+        color           : #fff;
+        font-size       : 11px;
+        display         : flex; 
+        align-items     : center;
+        justify-content : center;
+    }
+}
+
+.header-reserv-link-om {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding        : 5px 20px;
+    height         : 48px;
+    font-size      : 14px;
+    font-weight    : 600;
+    border-radius  : 24px;
+    transition     : 0.5s;
+    min-width      : 136px;
+
+    @include sm {
+        display: none;
+    }
+    
+    @include gr_background;
+
+    .figure-om {
+        margin-inline-end: 13.9px;
+
+        .svg-om {}
+    }
+}
+
+.menu-button-om {
+    display: none;
+    @include sm {
+        display: block;
+
+        svg {
+            width: 20px;
+            color: $color_2;
+        }
+    }
+}

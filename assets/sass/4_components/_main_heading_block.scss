@@ -1,0 +1,43 @@
+.main-heading-sec-om {
+    margin-bottom: 37px;
+
+    @include sm {
+        text-align: center;
+    }
+
+    .first-head-om {
+        color        : $color_3;
+        font-size    : 15px;
+        font-weight  : 600;
+        margin-top   : 0;
+        margin-bottom: 14px;
+
+        @include sm {
+            margin-bottom: 9px;
+        }
+    }
+
+    .second-head-om {
+        color        : $h_color_1;
+        font-size    : 28px;
+        font-weight  : bold;
+        margin-top   : 0;
+        margin-bottom: 10px;
+
+        @include sm {
+            font-size: 25px;
+        }
+    }
+
+    .parg-om {
+        margin-top   : 0;
+        margin-bottom: 0;
+        color        : $p_color_1;
+        font-size    : 16px;
+        font-weight  : 600;
+
+        @include sm {
+            font-size: 14px;
+        }
+    }
+}

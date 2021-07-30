@@ -1,0 +1,291 @@
+.main-my-account-page-om {
+    padding: 50px 0;
+}
+
+.my-account-list-om {
+    background-color: #fff;
+    box-shadow      : 0 2px 3px 0 rgba(0, 0, 0, 0.08);
+
+    @include sm {
+        margin-bottom: 20px;
+    }
+
+    .link-om {
+        display      : flex;
+        align-items  : center;
+        height       : 48px;
+        width        : 100%;
+        font-size    : 14px;
+        color        : rgba($h_color_2, 0.85);
+        padding      : 3px 20px;
+        border-radius: 5px;
+        position     : relative;
+
+        &::after {
+            content     : "";
+            display     : block;
+            border-style: solid;
+            border-width: 9px 0 9px 9px;
+            border-color: transparent $color_2 transparent $color_2;
+            opacity     : 0;
+            transition  : 0.5s;
+            position    : absolute;
+            top         : 50%;
+            transform   : translateY(-50%);
+            left        : 100%;
+
+            @include dir {
+                left        : unset;
+                right       : 100%;
+                border-width: 9px 9px 9px 0px;
+            }
+
+            @include sm {
+                display: none;
+                content: none;
+            }
+        }
+
+        &.active,
+        &:hover {
+            background-color: $color_2;
+            color           : #fff;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &.signout-link {
+            color           : #e60945;
+            background-color: transparent;
+
+            &:hover {
+                color: rgba(#e60945, 0.7);
+            }
+
+            &::after {
+                display: none;
+                content: none;
+            }
+        }
+    }
+}
+
+.my-account-information-sec-om {
+    border    : none;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.08);
+    padding   : 30px;
+    min-height: 288px;
+    margin    : 0;
+
+    @include sm {
+        min-height    : auto;
+        padding-bottom: 10px;
+    }
+
+}
+
+.personal-data-om {
+
+    .row-om {
+
+        @include sm {
+            margin: 0;
+        }
+
+        .col-om {
+            width: 50%;
+
+            @include sm {
+                padding: 0;
+                width  : 100%;
+            }
+        }
+    }
+
+
+    &.disabled-inputs-om {
+
+        .input-om {
+            background-color: #f6fafc;
+            border-color    : #f6fafc;
+            pointer-events: none;
+        }
+    }
+}
+
+.modification-button-wrapper-om {
+    display        : flex;
+    justify-content: flex-end;
+    margin-top     : 20px;
+
+    .submit-butt-om {
+        margin: 0;
+    }
+}
+
+
+// my-reservations-om
+.my-reservations-om,
+.my-requests-om {
+    padding: 0;
+}
+
+.my-reservations-table-om {
+    @include sm {
+        min-width: 578px;
+    }
+
+    .table-block-om {
+        padding: 16px;
+
+        &:nth-of-type(odd) {
+            background-color: #f6fafc;
+        }
+
+        .table-row-om {
+            display    : flex;
+            align-items: center;
+            flex-wrap  : wrap;
+
+            .col-om {
+                width  : (100%/4);
+                padding: 0 5px;
+            }
+        }
+
+        .parg-om {
+            font-size  : 14px;
+            color      : rgba($h_color_2, 0.85);
+            display    : inline-flex;
+            align-items: center;
+
+            &.hold-om {
+                color            : $color_2;
+                margin-inline-end: 10px;
+            }
+
+            &.cancle-om {
+                color: rgba(230, 9, 69, 0.85);
+            }
+
+            .figure-om {
+                margin-inline-end: 6.5px;
+            }
+        }
+
+        &.table-heading-om {
+            background-color: #e9f3f7;
+
+            .parg-om {
+                color      : $color_2;
+                font-size  : 16px;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.my-reservations-table-wrapper-om {
+    @include sm {
+
+        overflow-y: auto;
+    }
+}
+
+
+// requests-tabs-om
+.requests-tabs-om {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    border         : none;
+
+    .li-om {
+        border          : none;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        min-width       : 281px;
+        height          : 48px;
+        padding         : 0 20px;
+        background-color: #eeeeee;
+        font-size       : 16px;
+        color           : $h_color_1;
+        border-radius   : 48px;
+        margin          : 0 10px;
+        margin-bottom   : 25px;
+        position        : relative;
+
+        &::after {
+            content     : "";
+            border-style: solid;
+            border-width: 7px 7px 0px 7px;
+            border-color: $color_2 transparent $color_2 transparent;
+            display     : none;
+            position    : absolute;
+            top         : 100%;
+            left        : 50%;
+            transform   : translateX(-50%);
+
+
+            @include sm {
+                display: none;
+                content: none;
+            }
+        }
+
+
+        &.active {
+            background-color: $color_2;
+            color           : #fff;
+
+            &::after {
+                display: block;
+            }
+        }
+
+        @include sm {
+            min-width    : 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// my-store-requests-om
+.my-store-requests-om {
+    padding      : 16px 30px;
+    margin-bottom: 0;
+
+    @include sm {
+        width: 1000px;
+    }
+
+    .row-om {
+        .col-om {
+            width: 15%;
+
+            &:last-child {
+                width: 25%;
+            }
+        }
+    }
+
+    .status-om {
+        font-size: 16px;
+        color    : rgba($h_color_2, 0.85);
+        display  : inline-flex;
+
+        &.in-progress-om {
+            color            : $color_2;
+            margin-inline-end: 10px;
+
+        }
+
+        &.cancle-om {
+            color: #e60945;
+        }
+    }
+
+}

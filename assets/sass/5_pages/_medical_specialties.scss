@@ -1,0 +1,20 @@
+.main-medical-specialties-page-om {
+    padding: 60px 0 50px;
+    background-image   : url(../images/specials-sec-back.svg);
+    background-position: top center;
+    background-repeat  : no-repeat;
+    background-size    : 100% auto;
+
+    .row-om {
+        margin: 0 7.5px;
+
+        .col-om {
+            padding: 0 7.5px;
+        }
+    }
+
+    .specialization-block-om {
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+}

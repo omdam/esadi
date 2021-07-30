@@ -1,0 +1,265 @@
+.main-booking-page-om {
+    padding-top   : 40px;
+    padding-bottom: 40px;
+}
+
+
+.booking-tabs-om {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-bottom  : 30px;
+    border         : none;
+
+    .li-om {
+        display    : flex;
+        align-items: center;
+        border     : none;
+
+        @include xs {
+            margin-bottom: 10px;
+        }
+
+        &:not(:last-child) {
+            @include xs {
+                margin-inline-end: 10px;
+            }
+
+            &::after {
+                content         : "";
+                display         : block;
+                height          : 8px;
+                width           : 150px;
+                background-color: rgba($color_2, 0.15);
+                margin          : 0 14px;
+
+                @include sm {
+                    display: none;
+                }
+            }
+        }
+
+        .num-om {
+            width           : 40px;
+            height          : 40px;
+            color           : #7c9bbe;
+            background-color: rgba($color_2, 0.15);
+            display         : flex;
+            align-items     : center;
+            justify-content : center;
+            border-radius   : 50%;
+            font-size       : 18px;
+
+            @include xs {
+                width    : 30px;
+                height   : 30px;
+                font-size: 16px;
+            }
+        }
+
+        .text-om {
+            font-size          : 18px;
+            color              : #7c9bbe;
+            margin-inline-start: 10px;
+
+            @include xs {
+                font-size          : 16px;
+                margin-inline-start: 6px;
+            }
+        }
+
+        &.active {
+            background-color: transparent;
+
+            .num-om {
+                background-color: $color_2;
+                color           : #fff;
+            }
+
+            .text-om {
+                color: $color_2;
+            }
+        }
+
+    }
+
+}
+
+
+.times-lables-content-om {
+
+    .row-om {
+        margin: 0 -5px;
+
+        @include xs {
+            margin: 0;
+        }
+
+        .col-om {
+            width  : (100%/3);
+            padding: 0 5px;
+
+            @include sm {
+                width: 50%;
+            }
+
+            @include xs {
+                width  : 100%;
+                padding: 0;
+            }
+
+        }
+    }
+}
+
+.time-lable-block-om {
+    margin-bottom   : 10px;
+    border          : solid 1px #d7dbdd;
+    background-color: #f3f5f9;
+    height          : 48px;
+    border-radius   : 100px;
+    width           : 100%;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    color           : $h_color_1;
+    font-size       : 14px;
+    font-weight     : normal;
+    cursor          : pointer;
+    transition      : 0.5s;
+    outline         : none;
+
+    .time-start-om {
+        &::after {
+            content: " - ";
+            display: inline-flex;
+            margin : 0 5px;
+        }
+    }
+
+    .text-om {
+        margin-inline-start: 5px;
+    }
+
+    &:hover,
+    &:focus,
+    &.active-om {
+        background-color: $color_3;
+        border-color    : $color_3;
+        color           : #fff;
+        outline         : none;
+
+    }
+
+    &.disabled-om {
+        border          : solid 1px #d7dbdd;
+        background-color: #f3f5f9;
+        color           : rgba($h_color_1, 0.3);
+        pointer-events  : none;
+    }
+}
+
+
+.bayment-methods-content-om {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding-top    : 40px;
+    padding-bottom : 40px;
+
+    @include sm {
+        flex-direction: column;
+        padding       : 10px 0;
+    }
+}
+
+.bayment-method-block-om {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding        : 0 10px;
+
+    @include sm {
+        padding: 0;
+        width  : 100%;
+    }
+
+
+    .bayment-method-lable-om {
+        display         : flex;
+        font-size       : 15px;
+        color           : $h_color_2;
+        align-items     : center;
+        justify-content : center;
+        height          : 49px;
+        border-radius   : 50px;
+        background-color: #EEEEEE;
+        min-width       : 340px;
+        cursor          : pointer;
+        margin          : 0;
+
+        @include sm {
+            min-width    : 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .radio-om {
+        height  : 0;
+        padding : 0;
+        width   : 0;
+        margin  : 0;
+        position: absolute;
+        z-index : -1;
+    }
+
+    .figure-om {
+        margin-inline-end: 12px;
+        fill             : $h_color_2;
+    }
+
+    .radio-om:checked {
+
+        +.bayment-method-lable-om {
+            color           : #fff;
+            background-color: $color_2;
+
+            .figure-om {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+
+.booking-card-info-content-om {
+    .row-om {
+
+        @include sm {
+            padding: 0;
+            margin : 0;
+            display: block;
+            width  : 100%;
+        }
+
+        .col-om-1 {
+            width: 50%;
+
+            @include sm {
+                padding: 0;
+                margin : 0;
+                width  : 100%;
+            }
+        }
+
+        .col-om-2 {
+            width: 25%;
+
+            @include sm {
+                padding: 0;
+                margin : 0;
+                width  : 100%;
+            }
+        }
+    }
+}

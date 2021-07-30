@@ -1,0 +1,123 @@
+.main-single-doctor-om {
+    padding: 50px 0;
+    // background-image: url(../images/specials-sec-back.svg);
+    // background-position: top center;
+    // background-repeat: no-repeat;
+    // background-size: 100% auto;
+}
+
+.single-doctor-content-om {
+    margin-bottom: 30px;
+
+    .single-page-wrapper-om {
+        margin-bottom: 0;
+        padding      : 35px;
+        position     : relative;
+        overflow     : hidden;
+
+        @include sm {
+            padding: 20px;
+        }
+
+        &::after {
+            content        : "";
+            display        : block;
+            background     : $color_2;
+            background     : linear-gradient(90deg, $color_1 0%, $color_2 100%);
+            background-size: 100%;
+            width          : 300px;
+            height         : 100%;
+            position       : absolute;
+            top            : 0;
+            left           : 0;
+
+            @include dir {
+                right: 0;
+                left : unset;
+
+            }
+
+            @include sm {
+                display: none;
+            }
+        }
+
+    }
+
+    .row-om {
+        margin: 0 -25px;
+
+        @include sm {
+            display: block;
+            margin: 0;
+        }
+
+        .col-om {
+            padding: 0 25px;
+
+            @include sm {
+                padding: 0;
+            }
+        }
+
+        .col-om-1 {
+            width: 40%;
+
+            @include sm {
+                width: 100%;
+            }
+        }
+
+        .col-om-2 {
+            width: 60%;
+
+            @include sm {
+                width: 100%;
+            }
+        }
+    }
+
+    .single-block-img-om {
+        padding-bottom: 100%;
+        position      : relative;
+        z-index       : 1;
+
+    }
+
+    .single-page-head-om {
+        margin-top   : 20px;
+        margin-bottom: 10px;
+    }
+
+    .doctor-postion-om {
+        font-size    : 18px;
+        color        : $color_2;
+        margin-bottom: 25px;
+
+        @include sm {
+            font-size: 16px;
+        }
+    }
+
+    .doctor-master-lang-info {
+        color        : $h_color_1;
+        font-size    : 16px;
+        margin-bottom: 10px;
+    }
+
+    .header-reserv-link-om {
+        display   : inline-flex;
+        min-width : 182px;
+        margin-top: 15px;
+    }
+}
+
+.doctor-can-help-sec-om {
+    .single-page-wrapper-om {
+        margin-bottom: 0;
+    }
+
+    .single-page-head-om {
+        margin-bottom: 20px;
+    }
+}

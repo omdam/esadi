@@ -1,0 +1,68 @@
+.pagenation-om {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-wrap      : wrap;
+    margin-top     : 40px;
+
+    .li-om {
+        margin: 0 7px;
+
+    }
+
+    .link-om {
+        width          : 35px;
+        height         : 35px;
+        border-radius  : 4px;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        font-size      : 14px;
+        color          : #57789d;
+        margin-bottom  : 10px;
+        transition     : 0.5s;
+        background-color: #fff;
+
+        @include sm {
+            width  : 40px;
+            height : 40px;
+            padding: 0;
+        }
+
+        &.prev-om,
+        &.next-om {
+            svg {
+                width: 9px;
+            }
+
+            &:hover {
+                background-color: rgba($color_2, 0.9);
+            }
+        }
+
+        &.prev-om,
+        &.next-om,
+        &:hover {
+            background-color: $color_2;
+            color           : #fff;
+        }
+
+        &.prev-om {
+
+            transform: none;
+            
+            @include dir {
+                transform: rotateY(180deg);
+            }
+        }
+
+        &.next-om {
+            transform: rotateY(0);
+
+            @include dir {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+.social-om {
+    display    : flex;
+    align-items: center;
+
+    .link-om {
+        color          : #fff;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        &:not(:last-child) {
+            margin-inline-end: 17px;
+        }
+
+        .figure-om {}
+
+        &:hover {
+            color: rgba(#fff, 0.7);
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.toolbar-contact-info {
+    display    : flex;
+    align-items: center;
+
+    @include xs {
+        margin-bottom: 0;
+    }
+
+    .li-om {
+        &:not(:last-child) {
+            margin-inline-end: 40px;
+
+            @include sm {
+                margin-inline-end: 20px;
+            }
+        }
+    }
+
+    .contact-block-om {
+        display    : flex;
+        align-items: center;
+        color      : #fff;
+        font-size  : 14px;
+        font-weight: 600;
+
+        .figure-om {
+            margin-inline-end: 8px;
+            color            : #fff;
+            transition       : 0.5s;
+
+            .svg-om {
+                color: #fff;
+            }
+        }
+
+        .text-om {
+            @include sm {
+                display: none;
+            }
+        }
+
+        &:hover {
+            color: rgba(#fff, 0.7);
+
+            .figure-om {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

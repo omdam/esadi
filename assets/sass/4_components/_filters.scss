@@ -1,0 +1,235 @@
+.filter-search-om {
+
+    padding         : 38px 16px;
+    background-color: #edf4fd;
+    box-shadow      : 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+    margin-bottom   : 10px;
+
+    .search-group-om {
+        position: relative;
+
+        .input-om {
+            font-size: 12px;
+
+            &::placeholder {
+                font-weight: normal;
+                color      : #8d8d8d;
+            }
+        }
+
+        .butt-om {
+            position  : absolute;
+            top       : 50%;
+            right     : 16px;
+            transition: 0.5s;
+            color     : #8d8d8d;
+            transform : translateY(-50%);
+
+            @include dir {
+                right: unset;
+                left : 16px;
+            }
+
+
+            &:hover {
+                color: $color_2;
+            }
+        }
+    }
+}
+
+.sp-filter-block-om {
+    padding      : 0 16px 16px;
+    border       : none;
+    border-radius: 5px;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+
+    .head-block-om {
+        position     : relative;
+        padding      : 15px 0;
+        border-bottom: 1px solid #e8e8e8;
+        margin-bottom: 20px;
+        cursor       : pointer;
+
+        &::after {
+            content         : "";
+            display         : block;
+            position        : absolute;
+            bottom          : -2px;
+            left            : 0;
+            background-color: $color_2;
+            height          : 4px;
+            width           : 50px;
+
+            @include dir {
+                left : unset;
+                right: 0;
+            }
+        }
+
+        .title-om {
+            font-size  : 14px;
+            font-weight: bold;
+            color      : $h_color_1;
+
+            &::after {
+                content     : "";
+                display     : block;
+                width       : 0;
+                height      : 0;
+                border-width: 6.7px 5px 0px 5px;
+                border-color: $h_color_1 transparent $h_color_1 transparent;
+                border-style: solid;
+                position    : absolute;
+                top         : 50%;
+                right       : 0px;
+                transform   : translateY(-50%);
+                transition  : 0.5s;
+
+                @include dir {
+                    left : 0;
+                    right: unset;
+                }
+            }
+        }
+
+
+        &.collapsed {
+            .title-om {
+
+                &::after {
+                    transform: translateY(-50%) rotate(90deg);
+
+                    @include dir {
+
+                        transform: translateY(-50%) rotate(-90deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .sp-filter-list-om {
+        .li-om {
+
+            &:not(:last-child) {}
+        }
+
+        .butt-om {
+            font-size      : 14px;
+            font-weight    : normal;
+            color          : $h_color_1;
+            margin-bottom  : 13px;
+            display        : flex;
+            align-items    : center;
+            justify-content: space-between;
+            width          : 100%;
+
+            .sublist-active-button-om {
+                display : flex;
+                height  : 16px;
+                width   : 16px;
+                border  : 1px solid $h_color_1;
+                position: relative;
+
+                &::after,
+                &::before {
+                    content         : "";
+                    display         : block;
+                    width           : 5px;
+                    height          : 1px;
+                    position        : absolute;
+                    top             : 50%;
+                    left            : 50%;
+                    transform       : translate(-50%, -50%);
+                    background-color: $h_color_1;
+                }
+
+            }
+
+            &.collapsed {
+                .sublist-active-button-om {
+
+                    &::before {
+                        transform: translate(-50%, -50%) rotate(90deg);
+                    }
+                }
+            }
+        }
+
+        .sp-sub-list-om {
+            padding-inline-start: 14px;
+
+            .butt-om {
+                color: rgba($h_color_1, 0.85);
+
+                &.active {
+                    color: $color_2;
+                }
+            }
+        }
+
+    }
+
+    .sp-filter-price-list-om {
+        display       : flex;
+        align-items   : center;
+        margin        : 0 -7.5px;
+        flex-wrap     : wrap;
+        padding-bottom: 5px;
+
+        .li-om {
+            width      : 50%;
+            padding    : 0 7.5px;
+            display    : flex;
+            align-items: center;
+        }
+
+        .input-group-om {
+            margin   : 0;
+            flex-grow: 1;
+        }
+
+        .input-om {
+            border          : solid 1px #f7f7fa;
+            background-color: #f7f7fa;
+            padding         : 5px 10px;
+            font-size       : 10px;
+            height          : 30px;
+            border-radius   : 2px;
+
+
+            &::placeholder {
+                color: #8d8d8d;
+            }
+        }
+
+        .text-om {
+            margin-inline-end: 15px;
+            color            : $h_color_1;
+            font-size        : 14px;
+        }
+    }
+
+
+    .sp-filter-newly-arrived-list-om {
+        .label-om {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .checkbox-om {
+                margin-inline-end: 10px;
+            }   
+
+            .text-om {
+                font-size: 14px;
+                font-weight: normal;
+                color: $h_color_1;
+            }
+        }
+    }
+}

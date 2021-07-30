@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.741" height="16.048" viewBox="0 0 16.741 16.048">
+    <defs>
+        <style>
+            .add-to-cart-om{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Icon_feather-shopping-cart" transform="translate(-0.75 -0.75)">
+        <path id="Path_580" d="M13.386 30.693a.693.693 0 1 1-.693-.693.693.693 0 0 1 .693.693z" class="add-to-cart-om" transform="translate(-5.651 -15.338)"/>
+        <path id="Path_581" d="M29.886 30.693a.693.693 0 1 1-.693-.693.693.693 0 0 1 .693.693z" class="add-to-cart-om" transform="translate(-14.53 -15.338)"/>
+        <path id="Path_582" d="M1.5 1.5h2.771l1.857 9.276a1.386 1.386 0 0 0 1.386 1.115h6.734a1.386 1.386 0 0 0 1.386-1.115l1.108-5.812H4.964" class="add-to-cart-om"/>
+    </g>
+</svg>

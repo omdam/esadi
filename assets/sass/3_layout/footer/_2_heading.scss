@@ -1,0 +1,19 @@
+.footer-head-om {
+    color         : #fff;
+    font-size     : 17px;
+    font-weight   : 600;
+    margin-top    : 0;
+    padding-bottom: 19px;
+    position      : relative;
+
+    @include sm {
+        text-align: center;
+    }
+
+    // @include sm {
+    //     padding: 10px;
+    //     margin-bottom: 5px;
+    //     background-color: $color_4;
+    // }
+
+}

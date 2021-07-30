@@ -1,0 +1,37 @@
+.main-read-more-sec-om {
+    width          : 182px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    height         : 56px;
+    font-size    : 14px;
+    font-weight  : 600;
+    color        : #fff;
+    border-radius: 50px;
+    @include gr_background;
+
+    @include sm {
+        height: 50px;
+        width: 150px;
+        font-size: 12px;
+    }
+    
+
+    &.only-in-small {
+        display: none;
+
+        @include sm {
+            display: flex;
+            margin: auto;
+            margin-top: 30px;
+        }
+    }
+
+    &.only-in-larg {
+        display: flex;
+
+        @include sm {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.event-block-om {
+    display        : block;
+    text-decoration: none;
+    margin-bottom  : 30px;
+
+
+    .img-wraper-om {
+        position     : relative;
+        margin-bottom: 20px;
+        overflow     : hidden;
+    }
+
+    .read-more-om {
+        height             : 60px;
+        width              : 100%;
+        position           : absolute;
+        // bottom          : 0;
+        left               : 0;
+        color              : #fff;
+        font-size          : 14px;
+        font-weight        : 600;
+        display            : flex;
+        align-items        : center;
+        justify-content    : center;
+        background-color   : rgba($color_2, 0.75);
+        opacity            : 0;
+        transition         : 0.5s;
+        bottom             : -60px;
+
+        &:hover {
+            background-color: $color_2;
+        }
+    }
+
+    .img-block-om {
+        padding-bottom: 62.16%;
+
+        .img-om {}
+    }
+
+    .date-om {
+        font-size    : 14px;
+        font-weight  : 600;
+        color        : rgba($h_color_1, 0.5);
+        display      : flex;
+        margin-bottom: 9px;
+
+        .calender-om {
+            margin-inline-end: 10px;
+            color            : $color_2;
+        }
+
+        .day-om {
+            margin-inline-end: 8px;
+        }
+
+        .month-om {}
+
+    }
+
+    .head-om {
+        font-size    : 20px;
+        font-weight  : bold;
+        color        : $h_color_1;
+        margin-bottom: 11px;
+    }
+
+    .parg-om {
+        color      : $p_color_2;
+        font-size  : 14px;
+        font-weight: 600;
+
+    }
+
+
+    &:hover {
+        .read-more-om {
+            bottom : 0;
+            opacity: 1;
+        }
+
+        .head-om {
+            color: $color_2;
+        }
+    }
+}

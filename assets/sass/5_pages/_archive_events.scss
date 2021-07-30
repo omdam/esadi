@@ -1,0 +1,18 @@
+.main-archive-events-om {
+    padding: 50px 0;
+}
+
+.events-filter-om {
+
+    .filter-block-om {
+        &.adjust-width-om {
+            width: 50%;
+            margin-inline-start: auto;
+
+            @include sm {
+                width: 100%;
+                margin-inline-start: 0;
+            }
+        }
+    }
+}

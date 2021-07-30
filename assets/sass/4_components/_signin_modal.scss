@@ -1,0 +1,98 @@
+.signin-modal-section-om {
+
+
+    .modal-content {}
+
+    .signin-sub-head-om {
+        font-size    : 14px;
+        color        : $color_3;
+        text-align   : center;
+        margin-top   : 0;
+        margin-bottom: 5px;
+
+        &.add-email-parg-om {
+            font-weight  : 300;
+            margin-bottom: 25px;
+            color: rgba($h_color_2,0.85);
+        }
+    }
+
+    .signin-head-om {
+        font-size    : 20px;
+        font-weight  : 500;
+        text-align   : center;
+        margin-top   : 0;
+        margin-bottom: 30px;
+        color        : $h_color_2;
+
+        &.add-email-head-om {
+            margin-bottom: 10px;
+            
+        }
+    }
+
+    .social-signin-list-om {}
+
+    .signin-or-text-om {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        margin-bottom  : 25px;
+        margin-top     : 25px;
+        line-height    : 1;
+
+        &::after,
+        &::before {
+            content         : "";
+            display         : flex;
+            height          : 1px;
+            width           : 45%;
+            background-color: #e8e8e8;
+        }
+    }
+
+    .forget-password-link-om {
+        font-size    : 14px;
+        display      : inline-flex;
+        margin-top   : 10px;
+        margin-bottom: 25px;
+        color        : $h_color_2;
+        transition   : 0.5s;
+
+        &:hover {
+            color: $color_2;
+
+        }
+    }
+
+    .signup-last-link-om {
+        border-radius  : 30px;
+        color          : $h_color_2;
+        background     : #f7f7fa;
+        justify-content: center;
+        height         : 48px;
+        width          : 100%;
+        cursor         : pointer;
+        font-size      : 14px;
+        font-weight    : 500;
+        transition     : 0.5s;
+        margin         : 0;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        text-decoration: none;
+        overflow: hidden;
+
+        .text-om {
+            position: relative;
+            z-index: 1;
+        }
+
+        @include after_gr_background;
+
+        &:hover {
+            
+            color           : #fff;
+        }
+    }
+}

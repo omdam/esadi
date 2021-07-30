@@ -1,0 +1,48 @@
+.main-payment-page-om {
+    padding: 50px 0;
+    
+}
+
+.booking-tabs-om {
+
+    &.cart-payment-tabs-om {
+
+        .li-om {
+            &:not(:last-child) {
+                &:after {
+                    width: 312px;
+
+                    @include sm {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        display: inline-flex;
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pp-cart-payment-section-om {
+    padding: 30px 30px 15px;
+    border       : none;
+    margin-bottom: 20px;
+    box-shadow   : 0 1px 8px 0 rgba(0, 0, 0, 0.06);
+
+    .textarea-om {
+        height: 96px;
+    }
+
+    .head-om {
+        color: $h_color_1;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .bayment-methods-content-om {
+        padding-top: 0;
+    }
+}

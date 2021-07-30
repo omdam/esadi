@@ -1,0 +1,75 @@
+.doctors-filter-om {
+    .filter-block-om {
+        margin-bottom: 30px;
+        display      : flex;
+        align-items  : center;
+
+        @include xs {
+            display: block;
+        }
+
+        .input-group-om {
+            margin-bottom: 0;
+            flex-grow    : 1;
+        }
+
+        .input-om {}
+
+        .head-om {
+            font-size        : 14px;
+            font-weight      : bold;
+            font-stretch     : normal;
+            color            : $h_color_1;
+            margin-inline-end: 16px;
+
+            @include xs {
+                margin-bottom: 15px;
+            }
+        }
+
+
+        &.search-block-om {
+
+            .input-group-om {
+                margin-inline-end: 45px;
+                position         : relative;
+
+                @include xs {
+                    margin-inline-end: 0;
+                }
+
+                .butt-om {
+                    position : absolute;
+                    top      : 50%;
+                    right    : 14px;
+                    transform: translateY(-50%);
+
+                    @include dir {
+                        left : 14px;
+                        right: unset;
+                    }
+
+
+
+                    &:hover {
+                        color: $color_2;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.main-archive-doctors-om {
+    padding: 50px 0;
+    background-image: url(../images/specials-sec-back.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    .doctor-block-om {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,97 @@
+.product-block-om {
+    margin-bottom: 20px;
+    position     : relative;
+    display      : block;
+
+    .product-img-block-om {
+        padding-bottom: 85%;
+        overflow      : hidden;
+        margin-bottom : 15px;
+
+        img {
+
+            transition: 0.5s;
+        }
+    }
+
+    .offer-om {
+        font-size       : 12px;
+        font-weight     : normal;
+        color           : #fff;
+        height          : 22px;
+        padding         : 0 14px;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        background-color: $color_1;
+        border-radius   : 22px;
+        width           : fit-content;
+        position        : absolute;
+        top             : 10px;
+        right           : 10px;
+        line-height     : 1;
+
+        @include dir {
+            right: unset;
+            left : 10px;
+        }
+    }
+
+    .head-om {
+        color        : $h_color_1;
+        font-size    : 14px;
+        text-align   : center;
+        margin-bottom: 10px;
+        transition   : 0.5s;
+    }
+
+    .prices-om {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        margin-bottom  : 12px;
+
+        .price-om {
+            margin   : 0 2.5px;
+            color    : $h_color_1;
+            font-size: 14px;
+
+            &.del-om {
+                color          : rgba(36, 36, 36, 0.34);
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    .add-to-cart-butt-om {
+        font-size      : 13px;
+        color          : #fff;
+        display        : flex;
+        align-items    : center;
+        width          : fit-content;
+        justify-content: center;
+        height         : 38px;
+        padding        : 0 24px;
+        @include gr_background;
+        border-radius: 38px;
+        cursor       : pointer;
+        margin       : 0 auto;
+
+        .figure-om {
+            margin-inline-end: 7.5px;
+        }
+    }
+
+    &:hover {
+        .product-img-block-om {
+            img {
+
+                transform: scale(1.1);
+            }
+        }
+
+        .head-om {
+            color: $color_2;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.doctor-block-om {
+    background-color: #fff;
+    padding         : 26px 26px 19px;
+    border-radius   : 10px;
+    display         : block;
+    overflow        : hidden;
+    margin-bottom   : 30px;
+
+    @include after_gr_background;
+
+    .figure-om {
+        width          : 100%;
+        padding-bottom : 100%;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        border-radius  : 50%;
+        overflow       : hidden;
+        margin-bottom  : 15px;
+        position       : relative;
+        z-index        : 1;
+
+
+        img {
+            width     : 100%;
+            height    : 100%;
+            object-fit: cover;
+        }
+    }
+
+    .head-om {
+        font-size     : 18px;
+        font-weight   : bold;
+        color         : $h_color_1;
+        text-align    : center;
+        margin-bottom : 10px;
+        text-transform: capitalize;
+        position      : relative;
+        z-index       : 1;
+        transition: 0.5s;
+    }
+
+    .desc-om {
+        color      : $color_3;
+        font-size  : 13px;
+        font-weight: 600;
+        text-align : center;
+        position   : relative;
+        z-index    : 1;
+        transition: 0.5s;
+    }
+
+    &:hover {
+        .figure-om {
+            img {
+
+                transform: scale(1.1);
+            }
+        }
+
+        .head-om {
+            color: #fff;
+        }
+
+        .desc-om {
+            color: #fff;
+        }
+    }
+
+
+    &.branch-doctor-om {
+        padding: 0 ;
+        text-align: start;
+        .figure-om {
+            border-radius  : 0;
+            margin-bottom: 20px;
+        }
+        .head-om {
+            padding: 0 15px;
+            text-align: start;
+        }
+        
+        .desc-om {
+            padding: 0 15px;
+            text-align: start;
+            padding-bottom: 20px;
+        }
+    }
+}

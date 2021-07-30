@@ -1,0 +1,57 @@
+.breatcramp-om {
+    background-color: $color_2;
+    background-image: url(../images/breatcramp.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 40px 0 45px;
+
+    .breatcramp-title-om {
+        font-size     : 28px;
+        font-weight   : bold;
+        line-height   : 1.5;
+        color         : #fff;
+        text-transform: capitalize;
+        margin-top    : 0;
+        margin-bottom : 8px;
+        padding       : 0;
+
+
+    }
+
+    .breatcramp-list-om {
+        list-style: none;
+        padding   : 0;
+        margin    : 0;
+        display   : flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .li-om {
+            .link-om {
+                font-size     : 14px;
+                font-weight   : 600;
+                font-stretch  : normal;
+                font-style    : normal;
+                color         : rgba(#fff,0.5);
+                text-transform: capitalize;
+                transition    : 0.3s;
+
+                &:hover ,  &.current{
+                    color: #fff;
+                }
+              
+            }
+
+
+            &:not(:last-child) {
+                &::after {
+                    color: rgba(#fff,0.5);
+                    content: "/";
+                    margin : 0 6px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

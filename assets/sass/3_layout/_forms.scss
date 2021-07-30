@@ -1,0 +1,73 @@
+@import 'forms/input_block';
+@import 'forms/textarea_block';
+@import 'forms/submit_block';
+@import 'forms/select_block';
+@import 'forms/checkbox_input';
+@import 'forms/radio_input';
+@import 'forms/datepicker';
+
+.site-form-block-om {
+    box-shadow      : 0 3px 16px 0 rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    width           : 970px;
+    margin          : auto;
+    padding         : 30px;
+
+    @include sm {
+        width  : 100%;
+        padding: 20px;
+    }
+}
+
+.input-group-om {
+    margin-bottom: 20px;
+}
+
+.lable-om {
+    color        : $h_color_1;
+    font-size    : 16px;
+    margin-bottom: 15px;
+}
+
+.password-group-om {
+    position: relative;
+
+    .input-om {
+        padding-inline-end: 40px;
+    }
+
+    .show-password-button-om {
+        position   : absolute;
+        top        : 0;
+        right      : 0;
+        height     : 49px;
+        display    : flex;
+        align-items: center;
+        outline    : none;
+        width      : 34px;
+        padding    : 0;
+        background : transparent;
+        border     : none;
+        cursor     : pointer;
+
+        @include dir {
+            right: unset;
+            left : 0;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+
+        &.show-om {
+            .eye-path-cl-om {
+                stroke: $color_2 !important;
+            }
+
+            .ss-line-through-om {
+                display: none !important;
+            }
+        }
+    }
+}

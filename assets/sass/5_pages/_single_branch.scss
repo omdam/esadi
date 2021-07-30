@@ -1,0 +1,88 @@
+.main-single-branch-om {
+    padding: 50px 0 0;
+}
+
+.about-branch-om {
+    margin-bottom: 30px;
+
+    .single-page-wrapper-om {
+        border             : none;
+        background-image   : url(../images/about-back.svg);
+        background-position: top center;
+        background-repeat  : no-repeat;
+        background-size    : 100% auto;
+        margin-bottom      : 0;
+        padding            : 30px;
+        position           : relative;
+
+        &::after {
+            content         : "";
+            display         : block;
+            position        : absolute;
+            width           : 100%;
+            height          : 8px;
+            border-radius   : 8px;
+            bottom          : 0;
+            left            : 0;
+            background-color: $color_2;
+        }
+    }
+
+    .single-block-img-om {
+        margin       : 0 auto;
+        width        : fit-content;
+        margin-bottom: 30px;
+        min-height: 244px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .head-om {
+        font-size  : 28px;
+        font-weight: bold;
+        text-align : center;
+        color      : $color_2;
+    }
+
+    .single-page-parg-om {
+        text-align: center;
+    }
+}
+
+.branch-special-doctors-om {
+    padding-bottom: 50px;
+
+    .main-read-more-sec-om {
+        margin-right: auto;
+        margin-left : auto;
+    }
+}
+
+.branch-gallery-om {
+    padding         : 40px 0;
+    background-color: #fff;
+}
+
+.branch-image-block-om {
+    .figure-om {
+        padding-bottom: 100%;
+    }
+}
+
+.map-section-om {
+    padding-bottom: 50px;
+    padding-top   : 40px;
+}
+
+.map-om {
+    width : 100%;
+    height: 488px;
+
+    .map-ifram-om {
+        width : 100%;
+        height: 100%;
+    }
+}
+

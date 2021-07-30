@@ -1,0 +1,31 @@
+@import 'footer/1_about_section';
+@import 'footer/2_heading';
+@import 'footer/3_links_list';
+@import 'footer/4_download_apps';
+@import 'footer/5_newsletter';
+@import 'footer/6_cobyrights_section';
+@import 'footer/7_collapse_block';
+
+.footer-om {
+    background-color: $color_3;
+
+}
+
+.footer-content-om {
+    padding-top   : 75px;
+    padding-bottom: 75px;
+    color         : #fff;
+
+    .footer-social-om {
+        
+        @include sm {
+            justify-content: center;
+            margin-bottom: 30px;
+
+        }
+    }
+
+    @include sm {
+        padding: 50px 0 45px;
+    }
+}

@@ -1,0 +1,118 @@
+.main-single-contact-page-om {
+    padding: 50px 0 0;
+}
+
+.contact-page-content-om {
+    box-shadow: 0px 2px 4px 0 rgba(166, 164, 164, 0.2);
+    border    : none;
+    padding   : 40px 30px 30px;
+
+    .contact-form-content-om {
+        max-width : 770px;
+        margin: 0 auto;
+    }
+
+    .textarea-om {
+        height: 176px;
+    }
+
+    .input-group-om {
+        margin-bottom: 25px;
+    }
+}
+
+.contact-info-section-om {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-wrap      : wrap;
+    
+
+    li {
+        width        : (100% / 3);
+        position     : relative;
+        margin-bottom: 30px;
+
+        @include xs {
+            width: 100%;
+        }
+
+        &:not(:last-child) {
+            &::after {
+                content         : "";
+                width           : 1px;
+                height          : 46px;
+                position        : absolute;
+                top             : 50%;
+                transform       : translateY(-50%);
+                left            : 100%;
+                background-color: rgba($color_2, 0.5);
+
+                @include dir {
+                    left : unset;
+                    right: 100%;
+                }
+
+                @include xs {
+                    display: none;
+                    content: none;
+                }
+            }
+        }
+    }
+
+    .contact-block-om {
+        text-align   : center;
+        display      : block;
+        margin-bottom: 0;
+
+        .figure-om {
+            width           : 49px;
+            height          : 49px;
+            background-color: $color_2;
+            display         : flex;
+            align-items     : center;
+            justify-content : center;
+            border-radius   : 50%;
+            margin          : 0 auto;
+            margin-bottom   : 20px;
+            transition      : 0.7s;
+            
+            img , svg {
+                max-width : 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+        
+        .head-om {
+            color        : #05111e;
+            font-size    : 18px;
+            font-weight  : normal;
+            margin-bottom: 10px;
+            transition      : 0.5s;
+        }
+        
+        .parg-om {
+            font-size: 14px;
+            color    : $color_2;
+            transition      : 0.5s;
+
+        }
+
+
+        &:hover {
+            .figure-om {
+                transform: scale(1.1);
+                background-color: rgba($color_2, 0.9);
+            }
+            .head-om  {
+                color: $color_2;
+
+            }
+        }
+
+    }
+
+
+}

@@ -1,0 +1,77 @@
+.time-of-work-block-om {
+    background     : $color_2;
+    background     : linear-gradient(90deg, $color_1 0%, $color_2 100%);
+    background-size: 100%;
+    color          : #fff;
+    transition     : 0.5s;
+    padding        : 20px;
+    padding-bottom : 38px;
+    border-radius  : 10px;
+    margin-bottom  : 30px;
+
+    .head-om {
+        color        : #fff;
+        font-size    : 14px;
+        font-weight  : 600;
+        display      : flex;
+        align-items  : center;
+        margin-bottom: 10px;
+
+
+        &::before {
+            content          : url("../images/time-icon.svg");
+            margin-inline-end: 10px;
+        }
+    }
+
+    .parg-om {
+        padding-inline-start: 40px;
+        color               : #fff;
+        font-size           : 18px;
+        margin-bottom       : 7px;
+
+        .date-om {
+            display: block;
+        }
+    }
+
+    .reserv-link-om {
+        border-radius   : 100px;
+        background-color: #ffffff;
+        height          : 56px;
+        color           : $color_2;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        font-size       : 15px;
+        font-weight     : 600;
+        margin          : auto;
+        margin-top      : 20px;
+        width           : 182px;
+
+        .figure-om {
+            margin-inline-end: 11.7px;
+        }
+
+        &:hover {
+            background-color: rgba(#fff, 0.9);
+        }
+    }
+}
+
+.main-single-medical-specialtie-om {
+    padding: 40px 0;
+
+
+    .specialtie-doctors-section-om {
+        padding: 30px 0 0;
+
+        .single-page-head-om {
+            margin-bottom: 20px;
+        }
+
+        .doctor-block-om {
+            background-color: #fff;
+        }
+    }
+}

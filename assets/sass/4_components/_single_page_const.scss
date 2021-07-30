@@ -1,0 +1,112 @@
+.single-img-block-om {
+    padding-bottom: 64.93%;
+    overflow      : hidden;
+    border-radius : 10px;
+    margin-bottom : 20px;
+
+
+    
+    &:hover {
+        img {
+
+            transform: scale(1.1);
+        }
+    }
+}
+
+.single-page-wrapper-om {
+    padding         : 20px;
+    border          : solid 1px rgba(8, 24, 57, 0.15);
+    background-color: #fff;
+    border-radius   : 10px;
+    margin-bottom   : 15px;
+}
+
+.single-page-content-om {
+    >* {
+        font-size    : 14px;
+        color        : $p_color_1;
+        margin-bottom: 20px;
+        font-weight  : normal;
+    }
+
+    &.content-change-font-om {
+        >* {
+            font-size: 16px;
+        }
+    }
+
+    &.content-color-change-om {
+        >* {
+            color: $h_color_1;
+        }
+    }
+
+    .row {
+        margin-bottom: 0;
+    }
+
+
+    .single-page-images-blocks-om {
+        margin-top: 60px;
+
+        @include sm {
+            margin-top: 0;
+        }
+    }
+}
+
+
+.single-page-parg-om {
+    font-size    : 14px;
+    color        : $p_color_1;
+    margin-bottom: 30px;
+    font-weight  : normal;
+    line-height: 1.9;
+
+    &.parg-change-font-om {
+        font-size: 16px;
+    }
+}
+
+.single-page-head-om {
+    font-size    : 24px;
+    font-weight  : 800;
+    color        : $h_color_1;
+    margin-bottom: 15px;
+
+    @include sm {
+        font-size: 20px;
+    }
+}
+
+
+.single-page-list-om {
+    display  : flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+
+    @include sm {
+        display: block;
+    }
+
+    li {
+        width        : 50%;
+        font-size    : 14px;
+        color        : $h_color_1;
+        margin-bottom: 20px;
+        font-weight  : normal;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: url("../images/Icon feather-check-circle.svg");
+            margin-inline-end: 10px;
+
+        }
+
+        @include sm {
+            width: 100%; 
+        }
+    }
+}

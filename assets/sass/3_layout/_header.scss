@@ -1,0 +1,143 @@
+@import 'header/1_toolbar_contacts.scss';
+@import 'header/2_toolbar_socials.scss';
+@import 'header/3_toolbar_lang.scss';
+@import 'header/4_logo.scss';
+@import 'header/5_navbar.scss';
+@import 'header/6_cart_reserv.scss';
+
+
+
+
+// layout 
+.header-om {
+
+    .toolbar-sec-om {
+        background-color: $color_3;
+        color           : #fff;
+        padding         : 13px 0;
+
+        .ss-wraper-om {
+            display: flex;
+
+            @include xs {
+                flex-direction: column;
+
+            }
+        }
+
+        .social-om {
+            display    : flex;
+            align-items: center;
+
+            @include sm {
+                display: none;
+            }
+
+            &::after {
+                content         : "";
+                height          : 22px;
+                width           : 1px;
+                background-color: rgba(#fff, 0.1);
+                margin          : 0 15px;
+            }
+        }
+
+        .toolbar-lang-social-wr-om {
+            display    : flex;
+            align-items: center;
+        }
+    }
+
+    .header-sec-om {
+        padding: 16px 0;
+
+        .ss-wraper-om {
+            display: flex;
+        }
+
+        .header-logo-om {
+            margin-inline-end: 30px;
+
+            @include md {
+                margin-inline-end: 0;
+            }
+        }
+
+        .cart-reservation-block-om {
+            display    : flex;
+            align-items: center;
+        }
+    }
+
+}
+
+
+
+
+.fixed-header-warper {
+
+    // search icon in > layout > forms
+    &.active-menu-om,
+    &.not-active-menu-om {
+        position        : fixed;
+        top             : 0;
+        left            : 0;
+        width           : 100%;
+        z-index         : 111;
+        box-shadow      : 0 5px 10px 0 rgba(0, 0, 0, 0.04);
+        transition      : 0s;
+        background-color: #fff;
+
+        .header-logo-om {
+            width: 150px;
+            @include sm {
+                width: 130px;
+            }
+        }
+        
+        .header-sec-om {
+            padding: 10px 0;
+        }
+
+        .toolbar-sec-om {
+            padding: 8px 0;
+        }
+    }
+
+    &.active-menu-om {
+        animation: active-menu 0.5s;
+
+    }
+
+    &.not-active-menu-om {
+        animation   : not-active-menu 0.5s;
+        // transform: translateY(-100%);
+        top         : -200px;
+    }
+}
+
+
+@keyframes active-menu {
+    0% {
+        // transform: translateY(-100%);
+        top: -200px;
+    }
+
+    100% {
+        // transform: translateY(0);
+        top: 0;
+    }
+}
+
+@keyframes not-active-menu {
+    0% {
+        // transform: translateY(0);
+        top: 0;
+
+    }
+
+    100% {
+        // transform: translateY(-100%);
+        top: -200px;
+    }
+}

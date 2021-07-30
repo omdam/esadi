@@ -1,0 +1,125 @@
+.main-slider-om {
+    position: relative;
+
+    // swiper slider
+    .swiper-button-next,
+    .swiper-button-prev {
+        width : 59px;
+        height: 59px;
+        margin: 0 25px;
+
+        @include sm {
+            display: none;
+        }
+
+        &::after {
+
+            font-size: 26px;
+
+        }
+
+
+    }
+
+
+
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+
+        &.swiper-pagination-bullet-active {
+            background-color: $color_1;
+
+        }
+    }
+
+
+
+
+    .swiper-pagination {
+        position     : absolute;
+        bottom       : 30px;
+        margin-top   : 0;
+        margin-bottom: 0;
+    }
+
+
+
+
+    .slider-block-om {
+        .slider-img-om {
+            padding-bottom: 35.43%;
+
+            @include sm {
+                padding-bottom: 500px;
+            }
+        }
+    }
+
+
+    .slider-heading-block {
+        position : absolute;
+        top      : 50%;
+        left     : 0;
+        width    : 100%;
+        transform: translateY(-50%);
+
+        @include xs {
+            text-align: center;
+        }
+
+        .slider-caption-om {
+            color        : $h_color_1;
+            font-size    : 46px;
+            margin-top   : 0;
+            margin-bottom: 30px;
+            font-weight  : bold;
+            line-height  : 1.6;
+            width        : 50%;
+
+            @include md {
+                font-size: 30px;
+            }
+
+            @include sm {
+                width: 60%;
+            }
+
+            @include xs {
+                font-size: 24px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .slider-book-block-om {
+            display        : inline-flex;
+            justify-content: center;
+            align-items    : center;
+            flex-direction : column;
+            padding        : 20px;
+            min-width      : 200px;
+            color          : #fff;
+            border-radius  : 15px;
+            @include gr_background;
+            color: #fff;
+
+            .text-om {
+                color        : #fff;
+                font-weight  : bold;
+                margin-top   : 0;
+                margin-bottom: 0;
+                font-size    : 14px;
+
+                .org-text-om {
+                    display      : block;
+                    text-align   : center;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .figure-om {
+                margin-top   : 15px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

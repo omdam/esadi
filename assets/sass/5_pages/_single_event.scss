@@ -1,0 +1,107 @@
+.main-single-event-om {
+    padding: 50px 0;
+}
+
+.single-event-section-om {
+    margin-bottom: 40px;
+
+    .single-img-block-om {
+        padding-bottom: 51%;
+        margin-bottom : 30px;
+        border-radius : 0;
+
+    }
+
+    .single-event-content-om {
+        border       : none;
+        padding      : 0;
+        border-radius: 10px;
+        overflow     : hidden;
+        box-shadow: 0 1px 8px 0 rgb(0 0 0 / 6%);
+    }
+
+    .details-wrapper-om {
+        padding: 0 30px 22px;
+    }
+
+    .single-page-head-om {
+        margin-bottom: 30px;
+    }
+
+    .date-views-om {
+        display      : flex;
+        align-items  : center;
+        margin-bottom: 30px;
+
+        .block-om {
+            display      : flex;
+            align-content: center;
+            font-size    : 16px;
+            color        : rgba($h_color_1, 0.85);
+
+            &:not(:last-child) {
+                margin-inline-end: 30px;
+            }
+
+
+            .figure-om {
+                color            : $color_2;
+                margin-inline-end: 6.9px;
+            }
+        }
+    }
+
+    .single-fig-om {
+        padding-bottom: 64%;
+        margin-bottom : 30px;
+    }
+
+    .share-via-sec-om {
+        display    : flex;
+        align-items: center;
+
+        .share-via-text-om {
+            font-size        : 16px;
+            font-weight      : normal;
+            color            : #464646;
+            margin-inline-end: 20px;
+        }
+    }
+
+    .share-via-list-om {
+        display    : flex;
+        align-items: center;
+
+        li {
+            &:not(:last-child) {
+                margin-inline-end: 18px;
+            }
+
+        }
+
+        .figure-om {
+            width          : 17px;
+            height         : 17px;
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+
+            img {
+                max-width : 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.important-enents-section-om {
+    .single-page-head-om {
+        font-size    : 26px;
+        margin-bottom: 30px;
+
+        @include sm {
+            font-size: 20px;
+        }
+    }
+}

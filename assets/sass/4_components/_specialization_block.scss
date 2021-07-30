@@ -1,0 +1,60 @@
+.specialization-block-om {
+    padding         : 35px 5px;
+    background-color: #fff;
+    display         : block;
+    overflow        : hidden;
+    @include after_gr_background;
+   
+
+    .figure-om {
+        width          : 244px;
+        height         : 244px;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        margin         : auto;
+        border-radius  : 50%;
+        overflow       : hidden;
+        margin-bottom  : 25px;
+        position       : relative;
+        z-index        : 1;
+
+        .img-om {
+            object-fit: cover;
+            max-width : fit-content;
+            max-height: fit-content;
+
+        }
+    }
+
+    .head-om {
+        color        : $h_color_1;
+        font-size    : 22px;
+        font-weight  : 600;
+        margin-top   : 0;
+        margin-bottom: 0;
+        transition   : 0.5s;
+        text-align   : center;
+        position     : relative;
+        z-index      : 1;
+        transition   : 0.5s;
+
+    }
+
+    &:hover {
+
+        // border-radius: 10px;
+        // &::after {
+
+        // }
+        .head-om {
+            color: #fff;
+        }
+
+        .figure-om {
+            .img-om {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

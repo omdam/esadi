@@ -1,0 +1,65 @@
+// abstracts or helpers
+@import '1_abstracts/variables';
+@import '1_abstracts/functions';
+@import '1_abstracts/mixins';
+
+// base
+// @import 'base/normalize';
+@import '2_base/fonts';
+@import '2_base/base';
+@import '2_base/links';
+@import '2_base/buttons';
+@import '2_base/overlay';
+@import '2_base/selection_color';
+@import '2_base/scroll_bar';
+@import '2_base/lazy_load';
+@import '2_base/image_block';
+@import '2_base/close_button';
+@import '2_base/dropdown';
+@import '2_base/wraper_block';
+@import '2_base/modal_section';
+@import '2_base/tabs_block';
+
+
+// 3_layout
+@import '3_layout/header';
+@import '3_layout/footer';
+@import '3_layout/forms';
+@import '3_layout/sliders';
+
+//4_components
+@import '4_components/main_heading_block';
+@import '4_components/main_raed_more_link';
+@import '4_components/video_block';
+@import '4_components/breatcramp';
+@import '4_components/pagenation';
+@import '4_components/single_page_const';
+@import '4_components/home_main_slider';
+@import '4_components/request_block';
+@import '4_components/specialization_block';
+@import '4_components/doctor_block';
+@import '4_components/event_block';
+@import '4_components/banners';
+@import '4_components/signin_modal';
+@import '4_components/filters';
+@import '4_components/product_block';
+@import '4_components/cart_products_table'; 
+
+// 5_pages
+@import '5_pages/home';
+@import '5_pages/booking';
+@import '5_pages/medical_specialties';
+@import '5_pages/requests_forms';
+@import '5_pages/single_medical_specialtie';
+@import '5_pages/archive_doctors'; 
+@import '5_pages/single_doctor';
+@import '5_pages/about_us';
+@import '5_pages/single_branch';
+@import '5_pages/store';
+@import '5_pages/single_product';
+@import '5_pages/cart';
+@import '5_pages/payment_page';
+@import '5_pages/archive_events';
+@import '5_pages/single_event';
+@import '5_pages/contact';
+@import '5_pages/my_account';

@@ -1,0 +1,28 @@
+.footer-logo {
+    margin-bottom: 25px;
+    width        : 215px;
+
+    @include sm {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .img-om {
+        max-width: 100%;
+        filter   : brightness(0) invert(1);
+    }
+}
+
+.footer-parg-om {
+    font-size    : 13px;
+    color        : #fff;
+    margin-top   : 0;
+    margin-bottom: 21px;
+    line-height  : 1.9;
+    width: 75%;
+
+    @include sm {
+        width: 100%;
+        text-align: center;
+    }
+}

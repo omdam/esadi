@@ -1,0 +1,119 @@
+body {
+    font-size       : 18px;
+    font-family     : 'Cairo';
+    font-weight     : normal;
+    font-style      : normal;
+    line-height     : 1.6;
+    color           : $p_color_1;
+    background-color: #fff;
+}
+
+.overflow-body {
+    overflow: hidden;
+
+}
+
+p {
+    font-size: 18px;
+    color    : $p_color_1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $h_color_1;
+}
+
+.list-unstyled {
+    margin-bottom: 0;
+}
+
+
+.row-om {
+    display  : flex;
+    margin   : 0 -10px;
+    flex-wrap: wrap;
+
+    @include sm {
+        margin: 0 -7.5px;
+    }
+
+    @include xs {
+        margin: 0;
+    }
+
+    .col-om {
+        padding: 0 10px;
+        width  : calc(100% / 4);
+
+        @include sm {
+            width: calc(100% / 2);
+        }
+
+        @include xs {
+            width  : 100%;
+            padding: 0;
+        }
+    }
+}
+
+.section-wraper-om {
+    padding         : 20px;
+    background-color: #fff;
+}
+
+svg {
+    max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.fix-om {
+    border          : none;
+    outline         : none;
+    background-color: transparent;
+    margin          : 0;
+    padding         : 0;
+    text-decoration : none;
+    list-style: none;
+
+    &:hover , &:focus {
+        outline        : none;
+        text-decoration: none;
+    }
+}
+
+.main_grey_background_om {
+    background-color: #f6fafc;
+}
+
+.page-parg-om {
+    font-size: 16px;
+    font-weight: normal;
+    color: $p_color_1;
+    margin-top: 0;
+    margin-bottom: 25px;  
+} 
+
+.page-heading-om {
+    font-size: 24px;
+    font-weight: bold;
+    color: $h_color_1;
+    margin-top: 0;
+    margin-bottom: 15px;  
+}
+
+.main-page-default-back-g-om {
+    background-image: url(../images/specials-sec-back.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
