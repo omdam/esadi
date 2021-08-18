@@ -1,0 +1,144 @@
+.sub-menu-om {
+    position  : relative;
+    transition: 0.5s;
+
+    >a {
+        position   : relative;
+        display    : flex;
+        align-items: center;
+
+        &::after {
+            content            : "";
+            background-image   : url("../images/down-arrow-header.svg");
+            background-position: center center;
+            background-repeat  : no-repeat;
+            background-size    : contain;
+            display            : inline-flex;
+            width              : 20px;
+            height             : 12.9px;
+
+
+            @include sm {
+                background-image: none;
+                display         : block;
+                width           : 15px;
+                height          : 3px;
+                background-color: #fff;
+                position        : absolute;
+                top             : 50%;
+                transform       : translateY(-50%);
+                right           : 20px;
+
+                @include dir {
+                    right: unset;
+                    left : 20px;
+                }
+            }
+        }
+
+        &::before {
+            @include sm {
+                content         : "";
+                display         : block;
+                width           : 15px;
+                height          : 3px;
+                background-color: #fff;
+                position        : absolute;
+                top             : 50%;
+                transform       : translateY(-50%);
+                right           : 20px;
+                transform       : translateY(-50%) rotate(90deg);
+                transition      : 0.1s;
+
+                @include dir {
+                    right: unset;
+                    left : 20px;
+                }
+            }
+        }
+
+
+
+        &:hover {
+            color: $h_color_1 !important;
+        }
+    }
+
+    .sub-menu-list {
+        position        : absolute;
+        top             : 100%;
+        left            : 0;
+        z-index         : -1;
+        padding         : 25px 20px;
+        padding-bottom  : 5px;
+        background-color: #fff;
+        box-shadow      : 0 3px 6px 0 rgba(0, 0, 0, 0.08);
+        opacity         : 0;
+        visibility      : hidden;
+        transition      : 0.7s;
+
+        @include sm {
+            min-width       : 100%;
+            display         : none;
+            opacity         : 1;
+            position        : static;
+            visibility      : visible;
+            background-color: transparent;
+            padding-top     : 10px !important;
+            transition      : none;
+        }
+
+        li {
+            a {
+                text-decoration: none;
+                display        : block;
+                width          : 100%;
+                font-size      : 14px;
+                font-weight    : 600;
+                color          : rgba($p_color_2, 0.85);
+                margin-bottom  : 15px;
+                min-width      : 240px;
+
+                &:hover {
+                    color: $color_2;
+                }
+
+                @include sm {
+                    color: #fff;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+
+
+        @include dir {
+            left : unset;
+            right: 0;
+
+        }
+    }
+
+    &:hover {
+        background-color: rgba(136, 182, 242, 0.15);
+
+        .sub-menu-list {
+
+            opacity   : 1;
+            z-index   : 11;
+            visibility: visible;
+        }
+    }
+
+    &.active {
+
+        >a {
+            &::before {
+                transform: translateY(-50%) rotate(0);
+            }
+        }
+    }
+}

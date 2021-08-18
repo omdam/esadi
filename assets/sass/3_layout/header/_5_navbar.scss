@@ -16,10 +16,10 @@
 
         >li {
             &:not(:last-child) {
-                margin-inline-end: 36px;
+                margin-inline-end: 10px;
 
                 @include md {
-                    margin-inline-end: 13px;
+                    margin-inline-end: 0;
                 }
             }
 
@@ -33,6 +33,7 @@
                 text-transform : capitalize;
                 text-decoration: none;
                 transition     : 0.5s;
+                padding: 37px 10px;
 
                 &:hover {
                     color: $color_2;

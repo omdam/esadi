@@ -1,15 +1,17 @@
 .collapse-block-om {
+    margin-bottom: 30px;
 
     // footer heading
     .collapse-head-om {
 
         @include sm {
-            cursor  : pointer;
-            position: relative;
+            cursor          : pointer;
+            position        : relative;
             background-color: rgba($color_6, 0.2);
-            padding: 10px 20px;
-            text-align: start;
-            margin-bottom: 30px;
+            padding         : 10px 20px;
+            text-align      : start;
+            // margin-bottom: 30px;
+            margin-bottom   : 0;
 
 
             &::after,

@@ -4,6 +4,7 @@
 @import 'header/4_logo.scss';
 @import 'header/5_navbar.scss';
 @import 'header/6_cart_reserv.scss';
+@import 'header/7_sub_menu';
 
 
 
@@ -49,7 +50,11 @@
     }
 
     .header-sec-om {
-        padding: 16px 0;
+        
+        @include sm {
+            
+            padding: 16px 0;
+        }
 
         .ss-wraper-om {
             display: flex;
