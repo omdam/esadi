@@ -39,6 +39,19 @@
                     color: $color_2;
                 }
 
+                &.store {
+                    display: flex;
+                    align-items: center;
+                    &::after {
+                        margin-top: 2px;
+                        content: url("../images/Icon zocial-cart.svg");
+
+                        @include sm {
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                }
+
             }
 
         }

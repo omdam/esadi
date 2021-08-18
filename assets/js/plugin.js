@@ -333,8 +333,9 @@ jQuery(document).ready(function ($) {
      ********************************/
     //
     if ($(window).width() <= 991) {
-        $('.collapse-head-om').on('click', function () {
-
+        $('.collapse-head-om').on('click', function (e) {
+            e.preventDefault();
+            
             $('.collapse-head-om').not(this).parent().find('.list-collapse-om').slideUp();
             $(this).parent().find('.list-collapse-om').slideToggle({
                 queue: false,
