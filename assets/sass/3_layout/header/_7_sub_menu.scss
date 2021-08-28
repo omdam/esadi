@@ -75,6 +75,7 @@
         box-shadow      : 0 3px 6px 0 rgba(0, 0, 0, 0.08);
         opacity         : 0;
         visibility      : hidden;
+        min-width      : 240px;
         transition      : 0.7s;
 
         @include sm {
@@ -97,7 +98,6 @@
                 font-weight    : 600;
                 color          : rgba($p_color_2, 0.85);
                 margin-bottom  : 15px;
-                min-width      : 240px;
 
                 &:hover {
                     color: $color_2;
