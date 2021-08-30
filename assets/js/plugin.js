@@ -227,11 +227,11 @@ jQuery(document).ready(function ($) {
     });
 
 
-      /******************************** 
-    * 
-    * single product Slider   *
-    * 
-    ********************************/
+    /******************************** 
+  * 
+  * single product Slider   *
+  * 
+  ********************************/
     var swiper = new Swiper(".s-product-slider-2 .swiper-container", {
         loop: false,
         spaceBetween: 10,
@@ -335,7 +335,7 @@ jQuery(document).ready(function ($) {
     if ($(window).width() <= 991) {
         $('.collapse-head-om').on('click', function (e) {
             e.preventDefault();
-            
+
             $('.collapse-head-om').not(this).parent().find('.list-collapse-om').slideUp();
             $(this).parent().find('.list-collapse-om').slideToggle({
                 queue: false,
@@ -506,6 +506,21 @@ jQuery(document).ready(function ($) {
 
     //      elementToTakeFileVal.text(fileName);
     //  });
+
+
+    /********************************
+     * 
+     * go to next tab  *
+     * 
+     ********************************/
+
+    $(".go-to-another-tab").on("click",function(e){
+        e.preventDefault();
+
+        let data_next_id = "#" + $(this).data("next");
+        $(data_next_id).trigger( "click");
+
+    });
 
 
 });
