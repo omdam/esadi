@@ -112,7 +112,21 @@
     }
 }
 
-.time-lable-block-om {
+
+.time-input-checkbox-om {
+    // display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.time-input-checkbox-om:checked + .time-lable-block-om {
+    background-color: $color_3;
+    color: #fff;
+}
+
+.time-lable-block-om {   
     margin-bottom   : 10px;
     border          : solid 1px #d7dbdd;
     background-color: #f3f5f9;
