@@ -1,20 +1,20 @@
 .header-logo-om {
 
-    width  : 220px;
-    display: block;
+  width  : 89px;
+  display: block;
 
-    @include md {
-        width: 170px;    
-    }
+  @include md {
+    width: 80px;
+  }
 
 
-    .figure-om {
-        width: 100%;
-    }
+  .figure-om {
+    width: 100%;
+  }
 
-    img {
-        width     : 100%;
-        object-fit: contain;
-    }
+  img {
+    width     : 100%;
+    object-fit: contain;
+  }
 
 }
