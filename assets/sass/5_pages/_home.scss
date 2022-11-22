@@ -76,6 +76,8 @@
 
 // h-about-us-sec-om
 .h-about-us-sec-om {
+  margin-bottom: 50px;
+
   .h-about-us-wraper-om {
     display: flex;
 
@@ -116,14 +118,15 @@
 
 
   .h-about-content-om {
-    background-color: $color_3;
-    color           : #fff;
-    padding         : 66px 100px;
-    border-radius   : 10px;
-    display         : flex;
-    flex-direction  : column;
-    justify-content : center;
-    position        : relative;
+    // background-color: $color_3;
+    color          : #fff;
+    padding        : 66px 100px;
+    border-radius  : 10px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    position       : relative;
+    @include gr_background;
 
     @include md {
       padding: 40px;
@@ -197,6 +200,13 @@
     line-height  : 2.43;
     margin-bottom: 30px;
     width        : 90%;
+
+    * {
+
+      font-size  : 14px;
+      font-weight: 600;
+      color      : #fff;
+    }
 
     @include md {
       width        : 100%;

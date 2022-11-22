@@ -7,28 +7,29 @@
 @import 'footer/7_collapse_block';
 
 .footer-om {
-    background-color: $color_3;
-    background-image: url("../images/Image 18.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
+  // background-color: $color_3;
+  @include gr_background;
+  // background-image   : url("../images/Image 18.png");
+  // background-repeat  : no-repeat;
+  // background-size    : contain;
+  // background-position: center center;
 }
 
 .footer-content-om {
-    padding-top   : 75px;  
-    padding-bottom: 75px;
-    color         : #fff;
+  padding-top   : 75px;
+  padding-bottom: 75px;
+  color         : #fff;
 
-    .footer-social-om {
-        
-        @include sm {
-            justify-content: center;
-            margin-bottom: 30px;
-
-        }
-    }
+  .footer-social-om {
 
     @include sm {
-        padding: 50px 0 45px;
+      justify-content: center;
+      margin-bottom  : 30px;
+
     }
+  }
+
+  @include sm {
+    padding: 50px 0 45px;
+  }
 }

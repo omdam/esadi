@@ -71,7 +71,7 @@
 
   .manger-wrapper-om {
     border-radius   : 10px;
-    background-color: $color_2;
+    background-color: $color_1;
     padding         : 20px 35px;
     color           : #fff;
   }
@@ -116,6 +116,10 @@
   .single-page-parg-om {
     color        : #fff;
     margin-bottom: 10px;
+
+    * {
+      color: #fff;
+    }
 
     @include sm {
       text-align: center;
@@ -167,7 +171,7 @@
     width           : 100%;
     height          : 8px;
     margin          : 0;
-    background-color: $color_2;
+    background-color: $color_1;
     position        : absolute;
     bottom          : 0;
     left            : 0;
